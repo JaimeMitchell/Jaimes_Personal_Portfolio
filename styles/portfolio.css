@@ -2,11 +2,6 @@ body {
     font-family: 'Nunito';
 }
 
-/* 
-html {
-    background-color: red;
-} */
-
 .container {
     display: grid;
     padding: 3em;

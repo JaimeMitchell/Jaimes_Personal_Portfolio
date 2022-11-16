@@ -1,11 +1,25 @@
-html {
-    background-color: red;
+body{
+    background-color: black;
+    color: rgb(151, 190, 245);
 }
-
 p {
     line-height:150%;
     text-align: justify;
 
+}
+
+a{
+    color: rgb(10, 67, 124);
+    text-decoration: none;
+    line-height: 2em;
+    
+}
+
+li{
+        color: black;
+        text-decoration: none;
+        line-height: 2em;
+        
 }
 
 .container {
