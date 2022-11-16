@@ -1,1 +1,60 @@
-body{background-color: teal;}
+body {
+    font-family: 'Nunito';
+
+}
+
+/* 
+html {
+    background-color: red;
+} */
+
+.container {
+    display: grid;
+    padding: 3em;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    grid-template-rows: max-content;
+    grid-template-areas:
+        "header header header header "
+        ". main main nav"
+        ". main main ."
+        ". main main ."
+        ". main main ."
+        "footer footer footer footer";
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: teal;
+    color: rgb(4, 47, 72);
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: nav;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    grid-area: footer;
+    background-color: teal;
+}
