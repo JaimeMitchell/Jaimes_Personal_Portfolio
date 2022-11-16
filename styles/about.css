@@ -16,7 +16,8 @@ p {
     grid-template-rows: max-content;
     grid-template-areas:
         "header header header header "
-        "main main main nav"
+        "main main nav nav"
+        "main main nav nav"
         "footer footer footer footer";
 }
 
@@ -43,6 +44,9 @@ p {
 .nav {
     display: flex;
     justify-content: center;
+    flex-direction: column ;
+    align-self: flex-start;
+    
     grid-area: nav;
 }
 

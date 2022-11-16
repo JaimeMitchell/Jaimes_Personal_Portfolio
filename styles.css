@@ -1,5 +1,5 @@
 html {
-    background-color: red;
+    background-image: url(/content/CheeThrock_AcroYoga.jpg);
 }
 
 .container {
@@ -10,7 +10,8 @@ html {
     grid-template-rows: max-content;
     grid-template-areas:
         "header header header header "
-        "main main main nav"
+        "nav nav nav nav"
+        "main main main main"
         "footer footer footer footer";
 }
 
@@ -18,7 +19,7 @@ html {
     display: flex;
     justify-content: center;
     grid-area: header;
-    height: 200px;
+    height: 100px;
     width: 100%;
     text-align: center;
     background-color: teal;
@@ -43,12 +44,22 @@ html {
 .footer {
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 100px;
     width: 100%;
     grid-area: footer;
     background-color: teal;
+    border-radius: 1em;
 }
 
+.facebook {
+    align-self: center;
+    order: 2
+}
+
+.twitter {
+    align-self: center;
+    order: -2
+}
 
 label {
     border-radius: 1em;
