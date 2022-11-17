@@ -1,9 +1,6 @@
-html {
-    background-color: red;
-}
 
 p {
-    line-height:150%;
+    line-height: 150%;
     text-align: justify;
 
 }
@@ -25,12 +22,13 @@ p {
     display: flex;
     justify-content: center;
     grid-area: header;
-    height: 100px;
+    height: 1px;
     width: 100%;
     text-align: center;
     background-color: teal;
-    color: rgb(4, 47, 72);
 }
+
+h1{color:azure}
 
 .main {
     grid-area: main;
@@ -44,21 +42,26 @@ p {
 .nav {
     display: flex;
     justify-content: center;
-    flex-direction: column ;
+    flex-direction: column;
     align-self: flex-start;
-    
     grid-area: nav;
 }
 
 .footer {
     display: flex;
-    justify-content: center;
-    height: 100px;
+    height: 1px;
     width: 100%;
     grid-area: footer;
     background-color: teal;
 }
 
+.facebook {
+    align-self: flex-end;
+}
+
+.twitter {
+    align-self: flex-end;
+}
 
 label {
     border-radius: 1em;
