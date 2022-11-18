@@ -24,37 +24,39 @@ a {
     grid-template-rows: max-content;
     grid-template-areas:
         "header header header header "
-        "main main main nav"
-        "main main main nav"
+        ". nav nav ."
+        ". nav nav ."
         "footer footer footer footer";
 }
 
 header {
+    background-image: url(/content/IMG_0473.JPG);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: header;
-    height: 1px;
-    width: 100%;
     text-align: center;
-    background-color: teal;
-
-}
-
-
-.main {
-    grid-area: main;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
 }
 
-nav {
-    display: flex;
-    grid-area: nav;
+header h1 {
+    color: rgb(151, 190, 245);
+    font-family: Hel;
+}
+
+header h2 {
+    color: hotpink;
+}
+
+
+header h3 {
+    color: darkseagreen;
 }
 
 footer {
@@ -67,19 +69,22 @@ footer {
     background-color: teal;
 }
 
-/* 
-.facebook {
-   
+
+
+nav {
+    display: flex;
+    grid-area: nav;
+    width: 100%;
+    border-radius: .5em;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
-
-.twitter {
-} */
-
 
 label {
     border-radius: 1em;
     text-align: center;
-    display: inline-block;
+
 }
 
 .button {
@@ -87,14 +92,15 @@ label {
     padding: 1px;
     border-radius: 5%;
     background-color: rgb(193, 238, 184);
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .hidden {
     display: none;
-    width: 50%;
-    
+    width: 100%;
+
 }
 
 .view-more:not(:checked)~label,

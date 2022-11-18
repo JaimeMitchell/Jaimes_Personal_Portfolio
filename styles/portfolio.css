@@ -33,11 +33,22 @@ header {
     grid-area: header;
     height: 100%;
     width: 100%;
+    border-radius: .5em;
 }
 
-header h1{color:darkcyan;
-font-family: Hel;}
-header h3{color:darkseagreen;}
+header h1 {
+    color: rgb(151, 190, 245);
+    font-family: Hel;
+}
+
+header h2 {
+    color: hotpink;
+}
+
+
+header h3 {
+    color: darkseagreen;
+}
 
 h2 {
     color: rgb(194, 142, 243)
@@ -45,15 +56,20 @@ h2 {
 
 
 h3 {
-    color: rgb(243, 166, 166);
+    color: hotpink;
 }
 
-h4{color:darkcyan}
+h4 {
+    color: darkseagreen
+}
+
 p {
     display: flex;
     line-height: 150%;
     text-align: justify;
+
 }
+
 .main {
     grid-area: main;
     display: flex;
