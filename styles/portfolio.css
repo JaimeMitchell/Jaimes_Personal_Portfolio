@@ -101,14 +101,16 @@ nav {
 footer {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-
+    align-items:baseline;
     height: 1px;
     width: 100%;
     grid-area: footer;
     background-color: teal;
 }
 
+footer p {
+    color: teal
+}
 
 /* unvisited link */
 a:link {

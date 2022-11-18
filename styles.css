@@ -67,9 +67,12 @@ footer {
     border-radius: 5em;
     grid-area: footer;
     background-color: teal;
+
 }
 
-
+footer p {
+    color: teal
+}
 
 nav {
     display: flex;

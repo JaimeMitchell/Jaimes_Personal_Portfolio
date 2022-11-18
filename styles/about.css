@@ -64,7 +64,9 @@ footer {
     background-color: teal;
 }
 
-
+footer p {
+    color: teal
+}
 
 nav {
     display: flex;
@@ -78,7 +80,7 @@ nav {
 label {
     border-radius: 1em;
     text-align: center;
-    
+
 }
 
 .button {
@@ -86,15 +88,15 @@ label {
     padding: 1px;
     border-radius: 5%;
     background-color: rgb(193, 238, 184);
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
 .hidden {
     display: none;
     width: 100%;
-    
+
 }
 
 .view-more:not(:checked)~label,
