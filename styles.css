@@ -76,19 +76,23 @@ footer p {
 
 nav {
     display: flex;
-    padding: 20%;
+    
     grid-area: nav;
     width: 100%;
-    margin: 0 ;
+    margin: 0;
+    padding-left: 12%;
     border-radius: .5em;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
 }
-ul{display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 label {
     border-radius: 1em;
@@ -115,9 +119,9 @@ label {
 .view-more:not(:checked)~label,
 .view-more:checked~.hidden {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items:center;
     color: hotpink;
 }
 
