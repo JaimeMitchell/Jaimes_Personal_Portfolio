@@ -24,8 +24,8 @@ a {
     grid-template-rows: max-content;
     grid-template-areas:
         "header header header header "
-        "main . . nav"
-        "main . . nav"
+        "article . . nav"
+        "article . . nav"
         "footer footer footer footer";
 }
 
@@ -43,8 +43,8 @@ header {
 }
 
 
-.main {
-    grid-area: main;
+article {
+    grid-area: article;
     display: flex;
     justify-content: center;
     align-items: center;
