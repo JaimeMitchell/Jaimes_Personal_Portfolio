@@ -166,3 +166,58 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+.nav {
+    grid-area: nav;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+li {
+    color: hotpink;
+}
+
+.image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.nav:hover .overlay {
+    opacity: 1;
+}
+
+/*   
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+  } */
+
+/* <h2>Fade in Overlay</h2>
+  <p>Hover over the image to see the effect.</p>
+  
+  <div class="container">
+    <img src="img_avatar.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
+  </div>
+  
+  </body>
+  </html> */
