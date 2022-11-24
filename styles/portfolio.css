@@ -12,12 +12,12 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
     grid-template-rows: max-content;
     grid-template-areas:
-        "header header header header header"
-        ". . main . ."
-        ". . main . ."
-        ". . main . ."
-        ". . main . ."
-        "footer footer footer footer nav";
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "footer footer footer nav";
 }
 
 header {
@@ -81,7 +81,8 @@ p {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-self: flex-end;
     grid-area: nav;
     height: 45px;
     width: 150px;
