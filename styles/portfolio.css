@@ -16,8 +16,8 @@ body {
         ". . main . ."
         ". . main . ."
         ". . main . ."
-        ". . main . nav"
-        "footer footer footer footer footer";
+        ". . main . ."
+        "footer footer footer footer nav";
 }
 
 header {
@@ -93,6 +93,7 @@ nav {
     position: relative;
     width: 100%;
     height: auto;
+
 }
 
 li {
