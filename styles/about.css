@@ -18,8 +18,8 @@ a {
 
 .container {
     display: grid;
-    padding: 3em;
-    grid-gap: 2em;
+    padding: 15px;
+    grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
     grid-template-rows: max-content;
     grid-template-areas:
