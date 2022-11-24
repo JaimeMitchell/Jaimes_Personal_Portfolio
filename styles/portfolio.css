@@ -16,8 +16,8 @@ body {
         ". . main . ."
         ". . main . ."
         ". . main . ."
-        ". . main . ."
-        "footer footer footer footer nav";
+        ". . main . nav"
+        "footer footer footer footer footer";
 }
 
 header {
@@ -87,9 +87,18 @@ nav {
     width: 150px;
     border-radius: .5em;
 }
-li{
-    color:hotpink
+
+.nav {
+    grid-area: nav;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
+
+li {
+    color: hotpink;
+}
+
 /* 
 .facebook {
    
@@ -102,7 +111,7 @@ li{
 footer {
     display: flex;
     justify-content: flex-start;
-    align-items:baseline;
+    align-items: baseline;
     height: 1px;
     width: 100%;
     grid-area: footer;
